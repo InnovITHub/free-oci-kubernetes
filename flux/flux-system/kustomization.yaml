@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- ../flux-system-extra/kustomization-flux-system-extra.yaml
+- ../kube-system/kustomization-kube-system.yaml
+- ../monitoring/kustomization-monitoring.yaml
+- ../wireguard/
