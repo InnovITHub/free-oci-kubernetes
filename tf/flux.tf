@@ -18,6 +18,7 @@ resource "kubernetes_secret" "git_auth" {
 
 // Install the Flux Operator.
 resource "helm_release" "flux_operator" {
+  depends_on = [kubernetes_secret.git_auth]
   name       = "flux-operator"
   namespace  = "flux-system"
   repository = "oci://ghcr.io/controlplaneio-fluxcd/charts"

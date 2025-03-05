@@ -1,0 +1,13 @@
+# AUTO-GENERATED from Terraform. Do not edit manually.
+#
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ingress-secgroup-oidc
+  namespace: kube-system
+data:
+  values.yaml: |
+    controller:
+      service:
+        annotations:
+          oci-network-load-balancer.oraclecloud.com/oci-network-security-groups: "ocid1.networksecuritygroup.oc1.eu-frankfurt-1.aaaaaaaa6m47c52764nlmpvvvy74bcigt6g4hqeokx2j24mevcwi7j4xopuq"

@@ -106,3 +106,4 @@ resource "oci_identity_policy" "k8s_instance_policy_metrics" {
     "Allow dynamic-group k8s_instances to read compartments in tenancy"
   ]
 }
+
