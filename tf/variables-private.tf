@@ -27,7 +27,6 @@ variable "git_token" {
   description = "Git PAT"
   sensitive   = true
   type        = string
-  default     = "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"
 }
 variable "git_url" {
   description = "Git repository URL"
