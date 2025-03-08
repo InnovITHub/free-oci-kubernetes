@@ -48,7 +48,7 @@ variable "flux_version" {
 variable "git_path" {
   description = "Path in Git repository to monitor"
   type        = string
-  default     = "flux/flux-system/"
+  default     = "flux/"
 }
 
 variable "git_ref" {
