@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: cloud-demo-app-image-repository
+  namespace: cloud-demo-app
+spec:
+  image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app
+  interval: 1m0s
+  secretRef:
+    name: cloud-demo-app-secret
