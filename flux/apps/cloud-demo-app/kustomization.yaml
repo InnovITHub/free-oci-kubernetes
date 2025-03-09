@@ -10,5 +10,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  timeout: 1m
-  targetNamespace: cloud-demo-app
+    
