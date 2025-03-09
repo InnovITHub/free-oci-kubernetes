@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: cloud-demo-app-container
-        image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app:master-6ac8161-1741463717
+        image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app/cloud-demo-app:master-ae5eec03-1741482767
         ports:
         - containerPort: 8080
         resources: # Add resources section here
@@ -34,4 +34,3 @@ spec:
             memory: 512Mi # 512 Mebibytes of memory
       imagePullSecrets:
       - name: cloud-demo-app-secret
-      
