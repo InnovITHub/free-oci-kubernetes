@@ -34,10 +34,4 @@ spec:
             memory: 512Mi # 512 Mebibytes of memory
       imagePullSecrets:
       - name: cloud-demo-app-secret
-      affinity: # Add affinity section for pod anti-affinity
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution: # Hard requirement for scheduling
-          - topologyKey: "kubernetes.io/hostname" # Use hostname as the topology key (node level)
-            labelSelector:
-              matchLabels:
-                app: cloud-demo-app-pod-app # Match Pods with the same app label
+      
