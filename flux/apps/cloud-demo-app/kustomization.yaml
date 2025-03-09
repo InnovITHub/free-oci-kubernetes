@@ -11,4 +11,4 @@ spec:
     kind: GitRepository
     name: flux-system
   timeout: 1m
-  target-namespace: cloud-demo-app
+  targetNamespace: cloud-demo-app
