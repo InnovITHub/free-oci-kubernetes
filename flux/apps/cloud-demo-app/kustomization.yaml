@@ -1,12 +1,10 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: cloud-demo-app
-  namespace: cloud-demo-app
-spec:
-  interval: 1m0s
-  path: "./flux/apps/cloud-demo-app/deploy"
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
+namespace: cloud-demo-app
+resources:
+- imageupdateautomation.yaml
+- imagerepository.yaml
+- imagepolicy.yaml
+- kustomization-cloud-demo-app.yaml
+- ./deploy/deployment.yaml
+- ./deploy/service.yaml
