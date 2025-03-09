@@ -22,4 +22,4 @@ spec:
       branch: main
   update:
     path: ./flux/apps/cloud-demo-app/deploy/deployment.yaml
-    strategy: Replace
+    strategy: Setters
