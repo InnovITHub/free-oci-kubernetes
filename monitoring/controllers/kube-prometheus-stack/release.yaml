@@ -28,16 +28,17 @@ spec:
       enabled: false
     prometheus:
       prometheusSpec:
-      additionalScrapeConfigs:
-      - job_name: k8s-kube-state-metrics-innovit-cluster
-        honor_timestamps: true
-        metrics_path: /metrics
-        scheme: http
-        static_configs:
-        - targets: ['10.96.236.73:8080']
-        metric_relabel_configs:
-        - target_label: cluster
-          replacement: innovit-cluster
+        ignoreNamespaceSelectors: []
+        additionalScrapeConfigs:
+        - job_name: k8s-kube-state-metrics-innovit-cluster
+          honor_timestamps: true
+          metrics_path: /metrics
+          scheme: http
+          static_configs:
+          - targets: ['10.96.236.73:8080']
+          metric_relabel_configs:
+          - target_label: cluster
+            replacement: innovit-cluster
         retention: 24h
         resources:
           requests:
