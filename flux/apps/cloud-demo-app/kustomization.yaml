@@ -8,3 +8,4 @@ resources:
 - kustomization-cloud-demo-app.yaml
 - ./deploy/deployment.yaml
 - ./deploy/service.yaml
+- ./deploy/namespace.yaml
