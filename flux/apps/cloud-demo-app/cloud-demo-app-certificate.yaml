@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cloud-demo-app-crt
+  namespace: cloud-demo-app
+spec:
+  secretName: cloud-demo-app-tls
+  dnsNames:
+  - innovit.farted.net
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer

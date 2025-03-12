@@ -5,6 +5,10 @@ metadata:
   namespace: cloud-demo-app
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts: 
+    - innovit.farted.net
+    secretName: cloud-demo-app-tls
   rules:
   - host: innovit.farted.net
     http:

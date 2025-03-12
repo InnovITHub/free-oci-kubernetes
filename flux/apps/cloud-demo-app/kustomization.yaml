@@ -6,6 +6,7 @@ resources:
 - imagepolicy.yaml
 - kustomization-cloud-demo-app.yaml
 - cloud-demo-app-ingress.yaml
+- cloud-demo-app-certificate.yaml
 - ./deploy/deployment.yaml
 - ./deploy/service.yaml
 - ./deploy/namespace.yaml
