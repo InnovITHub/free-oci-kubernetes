@@ -7,10 +7,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts: 
-    - innovit.farted.net
+    - cloud-app.farted.net
     secretName: cloud-demo-app-tls
   rules:
-  - host: innovit.farted.net
+  - host: cloud-app.farted.net
     http:
       paths:
       - path: /

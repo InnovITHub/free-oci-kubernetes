@@ -6,7 +6,7 @@ metadata:
 spec:
   secretName: cloud-demo-app-tls
   dnsNames:
-  - innovit.farted.net
+  - cloud-app.farted.net
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
