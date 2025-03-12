@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: cloud-demo-app-container
-        image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app/cloud-demo-app:master-3256ff40-1741809463 # {"$imagepolicy": "cloud-demo-app:cloud-demo-app-image-policy"}
+        image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app/cloud-demo-app:master-12d4cf42-1741813578 # {"$imagepolicy": "cloud-demo-app:cloud-demo-app-image-policy"}
         ports:
         - containerPort: 8080
         resources: # Add resources section here
