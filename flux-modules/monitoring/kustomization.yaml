@@ -6,12 +6,12 @@ resources:
   - prometheus-community-helmrepo.yaml
   - kube-prometheus-stack.yaml
   - prom-stack-grafana-pass-secret.yaml
-  - alertmanager-slack-api-secret.yaml
+  # - alertmanager-slack-api-secret.yaml
   - metrics-server-helmrelease.yaml
   - metrics-server-helmrepo.yaml
   - flux-gitrepo.yaml
-  - flux-monitoring-config-kustomization.yaml
+  # - flux-monitoring-config-kustomization.yaml
   - kube-echo.yaml
   - ingress-nginx-grafana-dashboard.yaml
-  - flux/kustomization-monitoring-flux.yaml
+  # - flux/kustomization-monitoring-flux.yaml
   - ./loki/

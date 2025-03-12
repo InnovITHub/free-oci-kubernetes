@@ -42,7 +42,7 @@ spec:
       disabled:
         KubeletDown: true
       rules:
-        alertmanager: true
+        alertmanager: false
         etcd: false
         configReloaders: true
         general: true
@@ -69,7 +69,7 @@ spec:
         prometheus: true
         prometheusOperator: true
     alertmanager:
-      enabled: true
+      enabled: false
       alertmanagerSpec:
         volumes:
           - name: url-secret
