@@ -7,5 +7,5 @@ resources:
 - kustomization-cloud-demo-app.yaml
 - cloud-demo-app-ingress.yaml
 - ./deploy/deployment.yaml
-# - ./deploy/service.yaml
+- ./deploy/service.yaml
 - ./deploy/namespace.yaml

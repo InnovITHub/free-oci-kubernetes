@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: cloud-demo-app
+            name: cloud-demo-app-service
             port:
               number: 80
