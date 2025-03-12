@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cloud-demo-app-ingress
+  namespace: cloud-demo-app
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: innovit.farted.net
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: cloud-demo-app
+            port:
+              number: 80
