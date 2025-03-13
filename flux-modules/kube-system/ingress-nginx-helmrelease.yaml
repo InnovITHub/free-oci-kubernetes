@@ -70,7 +70,11 @@ spec:
             "30111": 30111
         annotations:
           # based on: https://github.com/oracle/oci-cloud-controller-manager/blob/master/docs/load-balancer-annotations.md
-          oci.oraclecloud.com/load-balancer-type: "nlb"
+          oci.oraclecloud.com/load-balancer-type: "lb"
           oci-network-load-balancer.oraclecloud.com/security-list-management-mode: "None"
+          service.beta.kubernetes.io/oci-load-balancer-shape: "flexible" # Enable Flexible Load Balancer
+          service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"  # Minimum bandwidth 10 Mbps
+          service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "10"  # Maximum bandwidth 100 Mbps
+          service.beta.kubernetes.io/oci-load-balancer-internal: "false" # Make it a public Load Balancer (for internet access)
     udp:
       "30111": "wireguard/wireguard:30111"
