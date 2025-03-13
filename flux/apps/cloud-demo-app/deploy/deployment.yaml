@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: cloud-demo-app-pod-app # Selector to match Pods managed by this Deployment
-  replicas: 10
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
