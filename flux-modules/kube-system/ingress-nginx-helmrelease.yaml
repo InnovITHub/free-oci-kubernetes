@@ -59,6 +59,7 @@ spec:
                 description: Too many 4XXs
                 summary: More than 5% of all requests returned 4XX, this requires your attention
       service:
+        loadBalancerIP: 152.70.25.76
         type: LoadBalancer
         enableHttp: true
         enableHttps: true
