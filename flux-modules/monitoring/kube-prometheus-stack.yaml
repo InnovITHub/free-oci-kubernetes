@@ -116,9 +116,9 @@ spec:
     grafana:
       grafana.ini:
         server:
-          root_url: ${grafana_url}
+          root_url: https://cloud-app.farted.net/grafana
           serve_from_sub_path: true
-          domain: ${grafana_domain}
+          domain: cloud-app.farted.net
       plugins:
         - oci-metrics-datasource
       additionalDataSources:
@@ -136,14 +136,14 @@ spec:
         enabled: true
         ingressClassName: nginx
         hosts:
-          - ${grafana_domain}
+          - cloud-app.farted.net
         path: /grafana
         annotations:
           cert-manager.io/cluster-issuer: "letsencrypt-prod"
         tls:
-          - secretName: ${grafana_domain}-tls
+          - secretName: cloud-app.farted.net-tls
             hosts:
-              - ${grafana_domain}
+              - cloud-app.farted.net
     kubelet:
       enabled: false
     kubeControllerManager:
