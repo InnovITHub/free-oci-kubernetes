@@ -16,5 +16,5 @@ spec:
       name: sops-gpg
   postBuild:
     substitute:
-      grafana_domain: grafana.innovit.farted.net
-      grafana_url: https://grafana.innovit.farted.net/grafana
+      grafana_domain: cloud-app.farted.net
+      grafana_url: https://cloud-app.farted.net/grafana
