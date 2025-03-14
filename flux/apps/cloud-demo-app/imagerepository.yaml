@@ -7,4 +7,4 @@ spec:
   image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app/cloud-demo-app
   interval: 1m0s
   secretRef:
-    name: cloud-demo-app-secret
+    name: oracle-registry-secret
