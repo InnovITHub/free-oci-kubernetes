@@ -119,7 +119,7 @@ spec:
           root_url: https://cloud-app.farted.net/grafana
           serve_from_sub_path: true
           domain: cloud-app.farted.net
-      security:
+        security:
           max_login_attempts: 5
           login_block_time: 5m
       plugins:
