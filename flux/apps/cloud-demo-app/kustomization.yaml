@@ -4,7 +4,6 @@ resources:
 - imageupdateautomation.yaml
 - imagerepository.yaml
 - imagepolicy.yaml
-- kustomization-cloud-demo-app.yaml
 - cloud-demo-app-ingress.yaml
 - cloud-demo-app-certificate.yaml
 - ./deploy/deployment.yaml
