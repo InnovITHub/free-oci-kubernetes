@@ -14,7 +14,4 @@ spec:
     provider: sops
     secretRef:
       name: sops-gpg
-  postBuild:
-    substitute:
-      grafana_domain: cloud-app.farted.net
-      grafana_url: https://cloud-app.farted.net/grafana
+  

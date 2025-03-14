@@ -25,6 +25,9 @@ spec:
       #      valuesKey: url
       #      targetPath: ".alertmanager.config.receivers[1].slack_configs[0]"
   values:
+    grafana_domain: cloud-app.farted.net
+    grafana_url: https://cloud-app.farted.net/grafana
+
     prometheus:
       prometheusSpec:
         serviceMonitorSelectorNilUsesHelmValues: false
@@ -116,9 +119,9 @@ spec:
     grafana:
       grafana.ini:
         server:
-          root_url: https://cloud-app.farted.net/grafana
+          root_url: "{{ .Values.grafana_url }}"
           serve_from_sub_path: true
-          domain: cloud-app.farted.net
+          domain: "{{ .Values.grafana_domain }}"
         security:
           max_login_attempts: 5
           login_block_time: 5m
@@ -139,14 +142,14 @@ spec:
         enabled: true
         ingressClassName: nginx
         hosts:
-          - cloud-app.farted.net
+          - "{{ .Values.grafana_domain }}"
         path: /grafana
         annotations:
           cert-manager.io/cluster-issuer: "letsencrypt-prod"
         tls:
-          - secretName: cloud-app.farted.net-tls
+          - secretName: "{{ .Values.grafana_domain }}-tls"
             hosts:
-              - cloud-app.farted.net
+              - "{{ .Values.grafana_domain }}"
     kubelet:
       enabled: false
     kubeControllerManager:
