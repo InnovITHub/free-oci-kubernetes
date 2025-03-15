@@ -3,8 +3,8 @@ kind: Kustomization
 bases:
   - ../
 resources:
-  - cloud-demo-app-certificate.yaml
-  - cloud-demo-app-ingress.yaml
+  - certificate.yaml
+  - ingress.yaml
   - imagepolicy.yaml
   - imageupdateautomation.yaml
   - deployment.yaml
