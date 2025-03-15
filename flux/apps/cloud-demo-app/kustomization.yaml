@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - imageupdateautomation.yaml
 - imagerepository.yaml
+- oracle-registry-secret.yaml
 - imagepolicy.yaml
 - cloud-demo-app-ingress.yaml
 - cloud-demo-app-certificate.yaml
