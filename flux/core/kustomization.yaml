@@ -4,3 +4,4 @@ resources:
 #  - ../../flux-modules/flux-system-extra/kustomization-flux-system-extra.yaml
   - ../../flux-modules/monitoring/kustomization-monitoring.yaml
   - ../../flux-modules/kube-system/kustomization-kube-system.yaml
+  - ../apps/commons/kustomization-commons.yaml
