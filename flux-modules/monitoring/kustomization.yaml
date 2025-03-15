@@ -14,3 +14,4 @@ resources:
   - kube-echo.yaml
   - ingress-nginx-grafana-dashboard.yaml
   - ./loki/
+  - oracle-registry-secret.yaml

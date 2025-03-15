@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ./prod/imageupdateautomation.yaml
 - ./prod/imagerepository.yaml
-- ./prod/oracle-registry-secret.yaml
+# - ./prod/oracle-registry-secret.yaml
 - ./prod/imagepolicy.yaml
 - ./prod/cloud-demo-app-ingress.yaml
 - ./prod/cloud-demo-app-certificate.yaml
