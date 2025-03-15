@@ -1,14 +1,14 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: cloud-demo-app-ingress
+  name: cloud-demo-app-TST-ingress
   namespace: cloud-demo-app
 spec:
   ingressClassName: nginx
   tls:
   - hosts: 
     - cloud-app.farted.net
-    secretName: cloud-demo-app-tls
+    secretName: cloud-demo-app-TST-tls
   rules:
   - host: cloud-app.farted.net
     http:
@@ -17,6 +17,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: cloud-demo-app-service
+            name: cloud-demo-app-TST-service
             port:
               number: 80

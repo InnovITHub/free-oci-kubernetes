@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cloud-demo-app-deployment
+  name: cloud-demo-app-TST-deployment
   namespace: cloud-demo-app
   labels:
     app: cloud-demo-app-deployment
 spec:
   selector:
     matchLabels:
-      app: cloud-demo-app-pod-app # Selector to match Pods managed by this Deployment
+      app: cloud-demo-app-TST-pod-app # Selector to match Pods managed by this Deployment
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -18,10 +18,10 @@ spec:
   template: # Template for the Pods that the Deployment will create
     metadata:
       labels:
-        app: cloud-demo-app-pod-app # Label to match the Service selector (same as in your Pod YAML)
+        app: cloud-demo-app-TST-pod-app # Label to match the Service selector (same as in your Pod YAML)
     spec:
       containers:
-      - name: cloud-demo-app-container
+      - name: cloud-demo-app-TST-container
         image: eu-frankfurt-1.ocir.io/frfasywgafrn/cloud-demo-app/cloud-demo-app:master-12d4cf42-1741813578 # {"$imagepolicy": "cloud-demo-app:cloud-demo-app-image-policy"}
         ports:
         - containerPort: 8080

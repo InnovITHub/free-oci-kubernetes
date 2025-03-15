@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
-  name: cloud-demo-app-image-policy
+  name: cloud-demo-app-TST-image-policy
   namespace: cloud-demo-app
 spec:
   imageRepositoryRef:

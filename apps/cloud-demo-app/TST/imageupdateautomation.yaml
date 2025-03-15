@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: cloud-demo-app-image-update-automation
+  name: cloud-demo-app-TST-image-update-automation
   namespace: cloud-demo-app
 spec:
   interval: 1m0s
